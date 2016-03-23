@@ -6,6 +6,19 @@ body   {
 	font: 100 14px Heltetica, Arial, sans-serif;
 }
 
+p {
+	align: justify;
+}
+
+figure img {
+    vertical-align: top;
+}
+
+figure figcaption {
+    border: 1px dotted blue;
+    text-align: center;
+}
+
 h1 {	
 	font-weight: 600;
 	background-color: #7fa2eb;
