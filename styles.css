@@ -1,109 +1,27 @@
 
-body   {
-	margin: 0;
-	padding: 0;
-	background-color: #fbfbfe;
-	font: 100 14px Heltetica, Arial, sans-serif;
-}
+/* Background Styling */
+body {margin: 0; padding: 0; background-color: #fbfbfe; font: 100 14px Heltetica, Arial, sans-serif; }
+a { text-decoration: none; }
+a:link, a:visited, a:active { text-decoration: darkblue; color: darkblue; }
+a:hover { text-decoration: blue; color: blue; }
+p { text-align: justify; overflow: hidden; min-width: 250px; }
 
-figure, figcaption {
-        display: block;
-        font-style: italic;
-        font-variant: small-caps;
-        text-align: center;
-}
+/* Format Figures */
+figure { display: block; font-style: italic; font-variant: small-caps; text-align: center; }
+figcaption { display: block; font-style: italic; font-variant: small-caps; text-align: center; padding-top: 10px; }
+figure img { vertical-align: top; }
+.box-set { overflow: auto; padding-left: 6%; padding-right: 6%; margin: 0;}
+.box-right { float: right; padding-right: 0; margin-right: 0; }
+.box-left { float: left; padding-left: 0; margin-left: 0; }
 
-p {
-	align: justify;
-        overflow: hidden;
-}
+/* Format Headers */
+.bannertop { font-size: 300%; font-weight: 600; background-color:#7fa2eb; color: #fbfbfe;  padding-left: 6%; padding-right: 6%; margin:0; padding-top: 5%; padding-bottom: 1%; }
+.bannerbottom { font-size: 150%; font-weight: 500; background-color:#7fa2eb; color: #fbfbfe; padding-left: 6%; padding-right: 6%; margin:0; padding-top: 1%; padding-bottom: 5%; }
 
-figure img {
-    vertical-align: top;
-}
+/* Navigation */
+nav {   list-style-type: none; padding-left: 6%; padding-right: 6%; padding-top: 0%; padding-bottom: 0%; overflow: hidden; background-color: #fbfbfe; margin: 0; }
+li { float: left; margin: 0; }
+li a { display: block; color: #7fa2eb; text-align: center; padding: 16px 18px; text-decoration: none; margin: 0; }
+li a:hover { background-color: #e0e3eb; }
 
-h1 {	
-	font-weight: 600;
-	background-color: #7fa2eb;
-	padding-top: 4%;
-	padding-bottom: 1%;
-	margin: 0;
-}
-
-h2 {
-	font-weight: 500;
-	background-color: #7fa2eb;
-	padding-top: 0%;
-	padding-bottom: 4%;
-	margin: 0;
-}
-
-h3 {
-	font-weight: 600;
-}
-
-#ul {
-	list-style-type: none;
-	width: 90%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 0%;
-	padding-bottom: 0%;
-	overflow: hidden;
-	background-color: #fbfbfe;
-	margin: 0;
-}
-
-li {
-	float: left;
-	margin: 0;
-
-}
-
-li a {
-	display: block;
-	color: #7fa2eb;
-	text-align: center;
-	padding: 16px 18px;
-	text-decoration: none;
-	margin: 0;
-}
-
-li a:hover {
-	background-color: #e0e3eb;
-}
-
-#header1 {
-	text-align: justify;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 0%;
-	padding-bottom: 0%;
-	background-color: #7fa2eb;
-	color: #fbfbfe;
-	font-size: 140%;
-	width: 90%;
-	margin: 0;
-}
-
-#header2 {
-	text-align: justify;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 0%;
-	padding-bottom: 0%;
-	background-color: #7fa2eb;
-	color: #fbfbfe;
-	font-size: 90%;
-	width: 90%;
-}
-
-#section {
-	text-align: justify;
-	background-color: #fbfbfe;
-	width: 90%;
-	padding-left: 5%;
-	padding-right: 5%;
-	padding-top: 1%;
-	padding-bottom: 1%;
-}
+/* Responsize Styling */
