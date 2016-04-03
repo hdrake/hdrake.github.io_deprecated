@@ -37,4 +37,5 @@ li a:hover { background-color: #e0e3eb; }
     li a:hover { background-color: #e0e3eb; }
     .box-right { padding-right: 0; margin-right: 0; padding-left: 0; margin-left: 0; }
     .box-left { padding-left: 0; margin-left: 0; padding-right: 0; margin-right: 0; }
+    p { text-align: justify; overflow: hidden; width: 92%; }
 }
