@@ -27,5 +27,12 @@ li a:hover { background-color: #e0e3eb; }
 
 /* Responsize Styling */
 @media only screen and (max-width: 800px) {
-    .img_size{width: 710}
+    .img_size{width: 92%}
+    .box-set { overflow: auto; padding-left: 4%; padding-right: 4%; margin: 0;}
+    .bannertop { font-size: 300%; font-weight: 600; background-color:#7fa2eb; color: #fbfbfe;  padding-left: 4%; padding-right: 4%; margin:0; padding-top: 5%; padding-bottom: 1%; }
+    .bannerbottom { font-size: 150%; font-weight: 500; background-color:#7fa2eb; color: #fbfbfe; padding-left: 4%; padding-right: 4%; margin:0; padding-top: 1%; padding-bottom: 5%; }
+    nav {   list-style-type: none; padding-left: 4%; padding-right: 4%; padding-top: 0%; padding-bottom: 0%; overflow: hidden; background-color: #fbfbfe; margin: 0; }
+    li { float: left; margin: 0; }
+    li a { display: block; color: #7fa2eb; text-align: center; padding: 10px 5px; text-decoration: none; margin: 0; }
+    li a:hover { background-color: #e0e3eb; }
 }
