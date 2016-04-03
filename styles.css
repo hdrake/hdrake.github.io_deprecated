@@ -10,7 +10,8 @@ p { text-align: justify; overflow: hidden; min-width: 250px; }
 figure { display: block; font-style: italic; font-variant: small-caps; text-align: center; }
 figcaption { display: block; font-style: italic; font-variant: small-caps; text-align: center; padding-top: 10px; }
 figure img { vertical-align: top; }
-.img_size {}
+.img_size {max-width: 400px}
+.mov_size {width: 400px; height: 220px;}
 .box-set { overflow: auto; padding-left: 45px; padding-right: 45px; margin: 0;}
 .box-right { float: right; padding-right: 0; margin-right: 0; }
 .box-left { float: left; padding-left: 0; margin-left: 0; }
