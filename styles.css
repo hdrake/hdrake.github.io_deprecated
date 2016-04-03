@@ -35,4 +35,6 @@ li a:hover { background-color: #e0e3eb; }
     li { float: left; margin: 0; }
     li a { display: block; color: #7fa2eb; text-align: center; padding: 10px 5px; text-decoration: none; margin: 0; }
     li a:hover { background-color: #e0e3eb; }
+    .box-right { padding-right: 0; margin-right: 0; }
+    .box-left { padding-left: 0; margin-left: 0; }
 }
