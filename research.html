@@ -24,11 +24,11 @@
 <h3> Deep Overturning Circulation in the Southern Ocean </h3>
 
 <p>
-The Meridional Overturning Circulation (MOC) is a major ocean current structure consisting of two intertwining cells: an upper cells feeds into a lower cell which itself feeds the upper cell. In the upper cell, surface waters of the Southern Ocean cross the equator on their way to the North Altantic Ocean where they lose heat and freshwater from sea-ice formation and sink to 1000-3500m by convection. These newly formed North Atlantic Deep Waters (NADW) slowly move southward at depth and upwell primarily along sloping isopycnals (surfaces of constant density) in the Southern Ocean. This newly upwelled water then feeds into the lower cell, where it is cooled and sinks to fill the abyssal Pacific and Indian Oceans to the north. Over time, these Antarctic Bottom Waters (AABW) slowly mix into the above waters, Indo-Pacific Deep Waters (IPDW), and return south along isopycnals above the NADW. These IPDW upwell further north than the NADW and are pumped to the north by the strong Southern Ocean winds to close the figure-eight.
+The Meridional Overturning Circulation (MOC) is a major ocean current structure consisting of two intertwining cells: an upper cells feeds into a lower cell which itself feeds the upper cell. In the upper cell, surface waters of the Southern Ocean cross the equator on their way to the North Altantic Ocean where they lose heat and freshwater from sea-ice formation and sink to 1000-3500m by convection. These newly formed North Atlantic Deep Waters (NADW) slowly move southward at depth and upwell primarily along sloping isopycnals (surfaces of constant density) in the Southern Ocean. This newly upwelled water then mostly feeds into the lower cell, where it is cooled and sinks to fill the abyssal Pacific and Indian Oceans to the north. Over time, these Antarctic Bottom Waters (AABW) mix into the above waters, Indo-Pacific Deep Waters (IPDW), and return south along isopycnals above the NADW. These IPDW upwell to the surface further north than the NADW and are subsequently pumped to the north by the strong Southern Ocean winds to close the circulation.
 </p>
 
 <p>
-The Southern Ocean is exceptional in that it contains the only land-free latitudinal bands on the planet. As a result, strong westerly (towards the east) winds blow around Antarctica and pump the surface waters to the north. This divergence of surface waters pulls up the deep waters (NADW and IPDW) from below, which manifests itself as a sloping of the isopycnals. Flow along these sloping isopycnals, in conjunction with mesoscale eddies, are the primary mechanisms by which waters from the deep ocean return to the surface.
+The Southern Ocean is exceptional in that it contains the only unblocked latitudinal band of ocean on the planet, at Drake Passage (no relation). As a result, strong westerly (towards the east) winds blow around Antarctica and pump the surface waters to the north. This divergence of surface waters pulls up the deep waters (NADW and IPDW) from below, which manifests itself as a sloping of the isopycnals. Flow along these sloping isopycnals, in conjunction with mesoscale eddies, are the primary mechanisms by which waters from the deep ocean return to the surface.
 </p>
 </div>
 
@@ -41,12 +41,11 @@ The Southern Ocean is exceptional in that it contains the only land-free latitud
 </figure>
 
 <p> 
-Improvements in computational capabilities of High Performance Computers since the late 1960s have lead to substantial increases in the resolution of atmosphere-ocean coupled general circulation models (AOGCMs), also referred to as global climate models. The current cutting-edge AOGCMs solve the state of the ocean at horizontal scales of ~10km , vertical scales of ~10-200m (increasing with depth), and time scales of ~days. These high resolution models explicit solve the large-scale currents of the oceans and their resulting high-frequency instabilities, mesoscale eddies, but have to parameterize processes occurring on smaller scales, such as but not limited to internal wave dissipation and iceberg advection.
+Improvements in computational capabilities of High Performance Computers since the late 1960s have lead to substantial increases in the resolution of coupled atmosphere-ocean general circulation models (AOGCMs), also referred to as global climate models. The current cutting-edge AOGCMs solve the state of the ocean at horizontal scales of ~10km , vertical scales of ~10-200m (increasing with depth), and time scales of ~days. These high resolution models explicit solve the large-scale currents of the oceans and their resulting high-frequency instabilities, mesoscale eddies, but have to parameterize processes occurring on smaller scales, such as (but not limited to) the breaking of internal waves in canyons and iceberg advection.
 </p>
 </div>
 
 <br style="clear:both;" />
-
 
 
 <div class="box-set">
@@ -59,7 +58,7 @@ Improvements in computational capabilities of High Performance Computers since t
 </figure>
 
 <p>
-The deployment of the global Argo array of over 10,000 autonomous profiling floats (4000 current), starting in the early 2000s and continuing today, has revolutionized the field of Physical Oceanography. Measurements of temperature and salinity in the upper-2000m of the ocean are now measured every 10 days globally, while previous measurements were ship-based, infrequent due to high cost of ship time, and along only a few pre-determined transects. Since the Argo floats are fully autonomous and have batteries lasting up to 5 years, they can be deployment from ships of opportunity at only $20,000 a pop for the basic instruments. Additionally, the newest generations of Argo are filling in the gaps between current Argo and ship-based measurements; SOCCOM floats incorporate biogeochemical sensors and Deep Argo floats can sustain abyssal pressures. 
+The deployment of the global Argo array of over 10,000 autonomous profiling floats (4000 current), starting in the early 2000s and continuing today, has revolutionized the field of Physical Oceanography. Measurements of temperature and salinity in the upper-2000m of the ocean are now measured every 10 days globally, while previous measurements were ship-based, infrequent due to high cost of ship time, and along only a few pre-determined transects. Since the Argo floats are fully autonomous and have batteries lasting up to 5 years, they can be deployed from ships of opportunity at only $20,000 a piece for the basic sensor package of temperature (T), salinity (S), and pressure (P). Additionally, the newest generations of Argo are filling in the gaps between current Argo and ship-based measurements; SOCCOM floats now incorporate biogeochemical sensors and Deep Argo floats sustain the high pressures needed for probing the abyssal ocean.
 </p>
 </div>
 <br style="clear:both;" />
@@ -67,14 +66,16 @@ The deployment of the global Argo array of over 10,000 autonomous profiling floa
 <div class="box-set">
 <h3> Lagrangian Ocean Analysis </h3>
 <p style="float: left;">
-Ocean analysis, whether in an observational or modeling framework, is typically done with Eulerian fields - i.e. variables such as velocity, temperature, salinity, and vorticity are given on the points of a grid with dimensions longitude, latitude, depth, and time. In Lagrangian analysis, however, these variables are given along time via a water parcel or observational float's trajectory through the Eulerian field. While Eulerian fields are easy to follow in two-dimensions, they become quite complex in three or four dimensions and the Lagrangian perspective becomes much more intuitive. The lagrangian framework is particularly useful for understanding three-dimensional coherent stuctures (such as mesoscale eddies, oil spills, etc.) and connectivity of different waters. 
+Ocean analysis, whether in an observational or modeling framework, is typically done with Eulerian fields - in other words variables such as velocity, temperature, salinity, and vorticity are given on the points of a fixed grid with dimensions longitude, latitude, depth, and time. In Lagrangian analysis, however, these variables are given along the trajectory of a virtual water parcel or observational float as it travels through the Eulerian field. While Eulerian fields are easy to follow in two dimensions (e.g. by plotting streamlines), they become quite complex in three dimensions so that the Lagrangian perspective becomes much more intuitive. The lagrangian framework is particularly useful for understanding three-dimensional coherent stuctures (such as mesoscale eddies, oil spills, etc.), the connectivity of different waters, and transit times between different parts of the ocean.
 </p>
 </div>
 
 <div class="box-set">
 <h3> Collaborators </h3>
 <p>
-  For my principal research projects, I collaborate with Princeton University (PU) Professor Jorge Sarmiento, PU postdoc Adele Morrison, PU postdoc Alison Gray,  Los Alamos National Laboratory (LANL) research scientist Wilbert Weijer, and Geophysical Fluid Dynamics Laboratory (GFDL) physical scientist Stephen Griffies, Scripps Institute of Oceanography (SIO) Professor Lynne Talley, SIO graduate student Veronica Tamsitt, SIO scientist Matthew Mazloff, and Jet Propulsion Laboratory (JPL) scientist Jinbo Wang. I am also contributing to a review paper on Lagrangian Ocean Analysis with Imperial College London (ICL) Professor Erik van Sebille and others, resulting from a workshop at ICL (09/2015). 
+  For my principal research projects, I collaborate with Princeton University (PU) professor Jorge Sarmiento, PU postdoc Adele Morrison, PU postdoc Alison Gray, PU postdoc Carolina Dufour, PU postdoc Heidi Chen, Los Alamos National Laboratory (LANL) research scientist Wilbert Weijer, and Geophysical Fluid Dynamics Laboratory (GFDL) physical scientist Stephen Griffies, Scripps Institute of Oceanography (SIO) Professor Lynne Talley, SIO graduate student Veronica Tamsitt, SIO scientist Matthew Mazloff, Jet Propulsion Laboratory (JPL) scientist Jinbo Wang. 
+<br>
+I am also contributing to a review paper on Lagrangian Ocean Analysis with Imperial College London (ICL) Professor Erik van Sebille and others, following an excellent workshop at ICL (09/2015).
 </p>
 </div>
 
