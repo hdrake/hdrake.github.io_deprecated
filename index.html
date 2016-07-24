@@ -15,7 +15,7 @@
 
 </head>
 
-<body class="bg-white" onresize="resize_function()"> 
+<body class="bg-white" onload="resize_function()" onresize="resize_function()"> 
 	<!-- Collapsible Navigation Bar -->
 	<header class="navbar navbar-default" role="navigation">
 		<div class="container-fluid bg-white" style="padding-top:0px; padding-bottom:0px;">
@@ -73,7 +73,8 @@
 		var source_tag = " ";
 		// Insert home content when page is started up
 		$( document ).ready(function(){
-			$("#main-body").load("home.html");
+			$("#main-body").load("home.html")
+			resize_function();
 		});
 
 		// Handle navigation bar clicks
