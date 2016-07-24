@@ -18,7 +18,7 @@
 <body class="bg-white" onload="resize_function()" onresize="resize_function()"> 
 	<!-- Collapsible Navigation Bar -->
 	<header class="navbar navbar-default" role="navigation">
-		<div class="container-fluid bg-white" style="padding-top:0px; padding-bottom:0px;">
+		<div class="container-fluid" style="padding-top:0px; padding-bottom:0px;">
 			<div class="navbar-header">
 				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 					<span class="sr-only">Toggle navigation</span>
@@ -73,7 +73,7 @@
 		// Handle navigation bar clicks
 		$('.navbar li').click(function(e) {
 			var portrait = document.getElementById('portrait');
-			var headerName = document.getElementById('portrait');
+			var headerTitle = document.getElementById('header-title');
 			var $this = $(this);
 			if (!$this.hasClass('active')) {
 				$('.navbar li.active').removeClass('active');
@@ -82,38 +82,37 @@
 
 			switch ( $(this.id).selector ) {
 				case "liHome":
-					$("#header-title").html("Graduate student<br>MIT / WHOI Joint Program <br>Physical Oceanography");
-					$("#header-title").attr("class","col-sm-6");
-					headerName.style.display='inline';
+					$("#header-name").html("Henri Drake");
+					$("#header-name").attr("class","col-sm-6");
+					headerTitle.style.display='inline';
 					portrait.style.display='block';
 					$("#main-body").load("home.html");
 					break;
 				case "liResearch":
-					$("#header-title").html("Research areas");
-					$("#header-title").attr("class","col-sm-12");
-					headerName.style.display='none';
+					$("#header-name").html("Research areas");
+					$("#header-name").attr("class","col-sm-12");
+					headerTitle.style.display='none';
 					portrait.style.display='none';
 					$("#main-body").load("research.html");
 					break;
 				case "liPapers":
-					$("#header-title").html("Refereed Publications");
-					$("#header-title").attr("class","col-sm-12");
-					headerName.style.display='none';
+					$("#header-name").html("Refereed Publications");
+					$("#header-name").attr("class","col-sm-12");
+					headerTitle.style.display='none';
 					portrait.style.display='none';
 					$("#main-body").load("papers.html");
 					break;
 				case "liLife":
-					$("#header-title").html("Life outside academia");
-					$("#header-title").attr("class","col-sm-12");
-					headerName.style.display='none';
+					$("#header-name").html("Life outside academia");
+					$("#header-name").attr("class","col-sm-12");
+					headerTitle.style.display='none';
 					portrait.style.display='none';
 					$("#main-body").load("life.html");
 					break;
 				case "liContact":
-					$("#header-name").html();
-					$("#header-title").html("Contact information");
-					$("#header-title").attr("class","col-sm-12");
-					headerName.style.display='none';
+					$("#header-name").html("Contact information");
+					$("#header-name").attr("class","col-sm-12");
+					headerTitle.style.display='none';
 					portrait.style.display='none';
 					$("#main-body").load("contact.html");
 					break;
