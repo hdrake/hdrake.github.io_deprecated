@@ -43,6 +43,12 @@ filter:contrast(85%)
   font-weight:400;
 }
 
+.banner-medium {
+  color:#fbfbfe;
+  font-size:24pt;
+  font-weight:400;
+}
+
 .banner-text {
   padding-top:4%;
   padding-bottom:4%;
