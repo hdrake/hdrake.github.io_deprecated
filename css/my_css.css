@@ -55,5 +55,9 @@ filter:contrast(85%)
 }
 
 .img-border { 
-   border:2px solid #333333;
+  border:2px solid #333333;
+}
+
+.figcaption {
+  padding-top:5px;
 }
