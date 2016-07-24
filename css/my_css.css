@@ -32,4 +32,5 @@ filter:contrast(85%)
 
 .small {
   color:#fbfbfe;
+  line-height: 0.85;
 }
