@@ -29,3 +29,7 @@ top:-2px;
 -webkit-filter:contrast(85%);
 filter:contrast(85%)
 }
+
+.small {
+  color:#fbfbfe;
+}

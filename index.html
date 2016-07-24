@@ -43,7 +43,7 @@
 	<div  class="container-fluid bg-blue">
 		<div class="row">
 			<div class="col-sm-6" id="banner-text">
-				<h1 id="header-title">Henri Drake<br><small style="line-height:120%">Graduate student<br>MIT / WHOI Joint Program <br>Physical Oceanography</small></h1>
+				<h1 id="header-title">Henri Drake<br><small>Graduate student<br>MIT / WHOI Joint Program <br>Physical Oceanography</small></h1>
 			</div>
 			<div class="col-sm-6" id="banner-pic">
 				<img id="portrait" src="pics/Henri_Drake_Portrait.jpg" class="img-rounded img-responsive center-block" style="width:200px" alt="Portrait of myself, Henri Drake">
@@ -81,37 +81,32 @@
 
 			switch ( $(this.id).selector ) {
 				case "liHome":
-					$("#header-title").html("Henri Drake<br><small style=\"line-height:120%\">Graduate student<br>MIT / WHOI Joint Program <br>Physical Oceanography</small>");
+					$("#header-title").html("Henri Drake<br><small>Graduate student<br>MIT / WHOI Joint Program<br>Physical Oceanography</small>");
 					$("#header-title").attr("class","col-sm-6");
-					headerTitle.style.display='block';
 					bannerPic.style.display='block';
 					$("#main-body").load("home.html");
 					break;
 				case "liResearch":
 					$("#header-title").html("Research areas");
 					$("#header-title").attr("class","col-sm-12");
-					headerTitle.style.display='none';
 					bannerPic.style.display='none';
 					$("#main-body").load("research.html");
 					break;
 				case "liPapers":
 					$("#header-title").html("Refereed Publications");
 					$("#header-title").attr("class","col-sm-12");
-					headerTitle.style.display='none';
 					bannerPic.style.display='none';
 					$("#main-body").load("papers.html");
 					break;
 				case "liLife":
 					$("#header-title").html("Life outside academia");
 					$("#header-title").attr("class","col-sm-12");
-					headerTitle.style.display='none';
 					bannerPic.style.display='none';
 					$("#main-body").load("life.html");
 					break;
 				case "liContact":
 					$("#header-title").html("Contact information");
 					$("#header-title").attr("class","col-sm-12");
-					headerTitle.style.display='none';
 					bannerPic.style.display='none';
 					$("#main-body").load("contact.html");
 					break;
