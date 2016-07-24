@@ -42,11 +42,11 @@
 	<!-- Banner -->
 	<div  class="container-fluid bg-blue">
 		<div class="row">
-			<div class="col-sm-6" id="banner">
+			<div class="col-sm-6" id="banner-text">
 				<h1 id="header-name"> Henri Drake </h1>
 				<h4 id="header-title" style="line-height:120%">Graduate student<br>MIT / WHOI Joint Program <br>Physical Oceanography</h4>
 			</div>
-			<div class="col-sm-6">
+			<div class="col-sm-6" id="banner-pic">
 				<img id="portrait" src="pics/Henri_Drake_Portrait.jpg" class="img-rounded img-responsive center-block" style="width:200px" alt="Portrait of myself, Henri Drake">
 			</div>
 		</div>
@@ -72,7 +72,7 @@
 
 		// Handle navigation bar clicks
 		$('.navbar li').click(function(e) {
-			var portrait = document.getElementById('portrait');
+			var bannerPic = document.getElementById('banner-pic');
 			var headerTitle = document.getElementById('header-title');
 			var $this = $(this);
 			if (!$this.hasClass('active')) {
@@ -85,35 +85,35 @@
 					$("#header-name").html("Henri Drake");
 					$("#header-name").attr("class","col-sm-6");
 					headerTitle.style.display='block';
-					portrait.style.display='block';
+					bannerPic.style.display='block';
 					$("#main-body").load("home.html");
 					break;
 				case "liResearch":
 					$("#header-name").html("Research areas");
 					$("#header-name").attr("class","col-sm-12");
 					headerTitle.style.display='none';
-					portrait.style.display='none';
+					bannerPic.style.display='none';
 					$("#main-body").load("research.html");
 					break;
 				case "liPapers":
 					$("#header-name").html("Refereed Publications");
 					$("#header-name").attr("class","col-sm-12");
 					headerTitle.style.display='none';
-					portrait.style.display='none';
+					bannerPic.style.display='none';
 					$("#main-body").load("papers.html");
 					break;
 				case "liLife":
 					$("#header-name").html("Life outside academia");
 					$("#header-name").attr("class","col-sm-12");
 					headerTitle.style.display='none';
-					portrait.style.display='none';
+					bannerPic.style.display='none';
 					$("#main-body").load("life.html");
 					break;
 				case "liContact":
 					$("#header-name").html("Contact information");
 					$("#header-name").attr("class","col-sm-12");
 					headerTitle.style.display='none';
-					portrait.style.display='none';
+					bannerPic.style.display='none';
 					$("#main-body").load("contact.html");
 					break;
 			}
