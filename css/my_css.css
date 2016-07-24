@@ -30,8 +30,8 @@ top:-2px;
 filter:contrast(85%)
 }
 
-.smallbanner {
+.banner-small {
   color:#fbfbfe;
   line-height: 0.85;
-  font-size: 12px;
+  font-size: 20;
 }
