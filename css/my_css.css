@@ -33,13 +33,13 @@ filter:contrast(85%)
 .banner-large {
   color:#fbfbfe;
   line-height:0.95;
-  font-size:36pt;
-  font-weight:600;
+  font-size:32pt;
+  font-weight:500;
 }
 
 .banner-small {
   color:#fbfbfe;
   line-height:0.95;
-  font-size:24pt;
-  font-weight:500;
+  font-size:18pt;
+  font-weight:400;
 }
