@@ -63,13 +63,6 @@
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
 	<script>
-		var allElements = document.getElementsByTagName("*");
-		var allIds = [];
-		for (var i = 0, n = allElements.length; i < n; ++i) {
-		  var el = allElements[i];
-		  if (el.id) { allIds.push(el.id); }
-		}
-
 		var source_tag = " ";
 		// Insert home content when page is started up
 		$( document ).ready(function(){
@@ -79,6 +72,8 @@
 
 		// Handle navigation bar clicks
 		$('.navbar li').click(function(e) {
+			var portrait = document.getElementById('portrait');
+			var headerName = document.getElementById('portrait');
 			var $this = $(this);
 			if (!$this.hasClass('active')) {
 				$('.navbar li.active').removeClass('active');
@@ -87,36 +82,39 @@
 
 			switch ( $(this.id).selector ) {
 				case "liHome":
-					$("#header-name").html("Henri Drake");
 					$("#header-title").html("Graduate student<br>MIT / WHOI Joint Program <br>Physical Oceanography");
+					$("#header-title").attr("class","col-sm-6");
+					headerName.style.display='inline';
+					portrait.style.display='block';
 					$("#main-body").load("home.html");
 					break;
 				case "liResearch":
-					$("#header-name").html();
 					$("#header-title").html("Research areas");
 					$("#header-title").attr("class","col-sm-12");
-					$("#portrait").html();
+					headerName.style.display='none';
+					portrait.style.display='none';
 					$("#main-body").load("research.html");
 					break;
 				case "liPapers":
-					$("#header-name").html();
 					$("#header-title").html("Refereed Publications");
 					$("#header-title").attr("class","col-sm-12");
-					$("#portrait").html();
+					headerName.style.display='none';
+					portrait.style.display='none';
 					$("#main-body").load("papers.html");
 					break;
 				case "liLife":
-					$("#header-name").html();
 					$("#header-title").html("Life outside academia");
 					$("#header-title").attr("class","col-sm-12");
-					$("#portrait").html();
+					headerName.style.display='none';
+					portrait.style.display='none';
 					$("#main-body").load("life.html");
 					break;
 				case "liContact":
 					$("#header-name").html();
 					$("#header-title").html("Contact information");
 					$("#header-title").attr("class","col-sm-12");
-					$("#portrait").html();
+					headerName.style.display='none';
+					portrait.style.display='none';
 					$("#main-body").load("contact.html");
 					break;
 			}
