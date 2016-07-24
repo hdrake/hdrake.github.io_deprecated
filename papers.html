@@ -1,12 +1,3 @@
-<!-- Banner -->
-<div  class="container-fluid bg-blue" onload="resize_function()" onresize="resize_function()">
-	<div class="row">
-		<div class="col-sm-12">
-			<h1 id="header-name"></h1>
-			<h4 id="header-title" style="line-height:120%">Refereed publications</h4>
-		</div>
-	</div>
-</div>
 
 <!-- Text -->
 <div class="container-fluid bg-white">
@@ -26,21 +17,4 @@
 		</div>
 	</div>
 </div>
-
-<!-- Snap banner when change window width -->
-<script>
-	function resize_function() {
-		var w = window.outerWidth;
-		if (w<768) {
-			document.getElementById("header-name").style.textAlign='center';
-			document.getElementById("header-title").style.textAlign='center';
-			document.getElementById("portrait").style.width='100%';
-			document.getElementById("portrait").style.maxWidth='350px';
-		} else {
-			document.getElementById("header-name").style.textAlign='left';
-			document.getElementById("header-title").style.textAlign='left';
-			document.getElementById("portrait").style.width='200px';
-		}
-	}
-</script>
 

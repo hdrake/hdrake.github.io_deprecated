@@ -15,9 +15,8 @@
 
 </head>
 
-
-<body class="bg-white">
-  <!-- Collapsible Navigation Bar -->
+<body class="bg-white" onresize="resize_function()"> 
+	<!-- Collapsible Navigation Bar -->
 	<header class="navbar navbar-default" role="navigation">
 		<div class="container-fluid bg-white" style="padding-top:0px; padding-bottom:0px;">
 			<div class="navbar-header">
@@ -39,6 +38,20 @@
 			</div>
 		</div>
 	</header>
+
+	<!-- Banner -->
+	<div  class="container-fluid bg-blue">
+		<div class="row">
+			<div class="col-sm-6" id="banner">
+				<h1 id="header-name"> Henri Drake </h1>
+				<h4 id="header-title" style="line-height:120%">Graduate student<br>MIT / WHOI Joint Program <br>Physical Oceanography</h4>
+			</div>
+			<div class="col-sm-6">
+				<img id="portrait" src="pics/Henri_Drake_Portrait.jpg" class="img-rounded img-responsive center-block" style="width:200px" alt="Portrait of myself, Henri Drake">
+			</div>
+		</div>
+	</div>
+
 
 	<!-- Main Body -->
 	<div id="main-body"></div>
@@ -73,18 +86,36 @@
 
 			switch ( $(this.id).selector ) {
 				case "liHome":
+					$("#header-name").html("Henri Drake");
+					$("#header-title").html("Graduate student<br>MIT / WHOI Joint Program <br>Physical Oceanography");
 					$("#main-body").load("home.html");
 					break;
 				case "liResearch":
+					$("#header-name").html();
+					$("#header-title").html("Research areas");
+					$("#header-title").attr("class","col-sm-12");
+					$("#portrait").html();
 					$("#main-body").load("research.html");
 					break;
 				case "liPapers":
+					$("#header-name").html();
+					$("#header-title").html("Refereed Publications");
+					$("#header-title").attr("class","col-sm-12");
+					$("#portrait").html();
 					$("#main-body").load("papers.html");
 					break;
 				case "liLife":
+					$("#header-name").html();
+					$("#header-title").html("Life outside academia");
+					$("#header-title").attr("class","col-sm-12");
+					$("#portrait").html();
 					$("#main-body").load("life.html");
 					break;
 				case "liContact":
+					$("#header-name").html();
+					$("#header-title").html("Contact information");
+					$("#header-title").attr("class","col-sm-12");
+					$("#portrait").html();
 					$("#main-body").load("contact.html");
 					break;
 			}
@@ -97,6 +128,23 @@
 			}
 		});
 
+	</script>
+
+	<script>
+		resize_function()
+		function resize_function() {
+			var w = window.outerWidth;
+			if (w<768) {
+				document.getElementById("header-name").style.textAlign='center';
+				document.getElementById("header-title").style.textAlign='center';
+				document.getElementById("portrait").style.width='100%';
+				document.getElementById("portrait").style.maxWidth='350px';
+			} else {
+				document.getElementById("header-name").style.textAlign='left';
+				document.getElementById("header-title").style.textAlign='left';
+				document.getElementById("portrait").style.width='200px';
+			}
+		}
 	</script>
 
 </body>
