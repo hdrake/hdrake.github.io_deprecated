@@ -31,6 +31,9 @@ li a:hover { background-color: #e0e3eb; }
 
 /* Responsive Grid, columns add to 20 */
 * {  box-sizing: border-box; }
-.col-1 {width: 5%;}
-.col-18 {width: 90%;}
+.col-5 {width: 5%;}
+.col-20 {width: 20%;}
+.col-50 {width: 50%;}
+.col-70 {width: 70%;}
+.col-90 {width: 90%;}
 .row:after { content: ""; clear: both; display: block; }

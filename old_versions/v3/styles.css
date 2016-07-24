@@ -1,0 +1,44 @@
+
+/* Background Styling */
+body {margin: 0; padding: 0; background-color: #fbfbfe; font: 100 14px Heltetica, Arial, sans-serif; }
+a { text-decoration: none; }
+a:link, a:visited, a:active { text-decoration: darkblue; color: darkblue; }
+a:hover { text-decoration: blue; color: blue; }
+p { text-align: justify; overflow: hidden; min-width: 250px; }
+
+/* Format Figures */
+figure { display: block; font-style: italic; font-variant: small-caps; text-align: center; }
+figcaption { display: block; font-style: italic; font-variant: small-caps; text-align: center; padding-top: 10px; }
+figure img { vertical-align: top; }
+.img_size {max-width: 400px}
+.mov_size {width: 400px; height: 220px;}
+.small_size {height: 10%; width: auto}
+.box-set { overflow: auto; padding-left: 45px; padding-right: 45px; margin: 0;}
+.box-right { float: right; padding-right: 0; margin-right: 0; }
+.box-left { float: left; padding-left: 0; margin-left: 0; }
+
+/* Format Headers */
+.bannertop { font-size: 300%; font-weight: 600; background-color:#7fa2eb; color: #fbfbfe;  padding-left: 45px; padding-right: 45px; margin:0; padding-top: 5%; padding-bottom: 1%; }
+.bannerbottom { font-size: 150%; font-weight: 500; background-color:#7fa2eb; color: #fbfbfe; padding-left: 45px; padding-right: 45px; margin:0; padding-top: 1%; padding-bottom: 5%; }
+
+/* Navigation */
+nav {   list-style-type: none; padding-left: 45px; padding-right: 45px; padding-top: 0%; padding-bottom: 0%; overflow: hidden; background-color: #fbfbfe; margin: 0; }
+li { float: left; margin: 0; }
+li a { display: block; color: #7fa2eb; text-align: center; padding: 16px 18px; text-decoration: none; margin: 0; }
+li a:hover { background-color: #e0e3eb; }
+
+/* Responsize Styling */
+@media only screen and (max-width: 800px) {
+    .img_size{width: 92%}
+    .mov_size{width: 92%}
+    .box-set { overflow: auto; padding-left: 4%; padding-right: 4%; margin: 0;}
+    .bannertop { font-size: 300%; font-weight: 600; background-color:#7fa2eb; color: #fbfbfe;  padding-left: 4%; padding-right: 4%; margin:0; padding-top: 5%; padding-bottom: 1%; }
+    .bannerbottom { font-size: 150%; font-weight: 500; background-color:#7fa2eb; color: #fbfbfe; padding-left: 4%; padding-right: 4%; margin:0; padding-top: 1%; padding-bottom: 5%; }
+    nav {   list-style-type: none; padding-left: 4%; padding-right: 4%; padding-top: 0%; padding-bottom: 0%; overflow: hidden; background-color: #fbfbfe; margin: 0; }
+    li { float: left; margin: 0; }
+    li a { display: block; color: #7fa2eb; text-align: center; padding: 10px 5px; text-decoration: none; margin: 0; }
+    li a:hover { background-color: #e0e3eb; }
+    .box-right { padding-right: 0; margin-right: 0; padding-left: 0; margin-left: 0; }
+    .box-left { padding-left: 0; margin-left: 0; padding-right: 0; margin-right: 0; }
+    p { text-align: justify; overflow: hidden; }
+}

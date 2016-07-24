@@ -1,0 +1,52 @@
+<!-- Banner -->
+<div  onload="resize_function()" onresize="resize_function()" class="container-fluid bg-blue">
+	<div class="row">
+		<div class="col-sm-6">
+			<h1 id="header-name"></h1>
+			<h4 id="header-title" style="line-height:120%">Graduate Student<br>MIT / WHOI Joint Program <br>Physical Oceanography</h4>
+		</div>
+		<div class="col-sm-6">
+			<img id="portrait" src="pics/Henri_Drake_Portrait.jpg" class="img-rounded img-responsive center-block" style="width:200px" alt="Portrait of myself, Henri Drake">
+		</div>
+	</div>
+</div>
+
+<!-- Text -->
+<div>
+	<div class="row">
+		<div class="col-sm-6">
+			<h3>Research Interests</h3>
+			<p> I am a graduate student in the Massachusetts Institute of Technology / Woods Hole Oceanographic Institute Joint Program in Physical Oceanography. The goal of my research is to understand the meridional overturning circulation and its role in climate. I am interested in both the dynamics of the wind-driven upwelling of the upper ocean and the mixing-driven upwelling of the abyssal ocean. I also am interested in how the overturning circulation controls fluxes of heat, carbon, and nutrients between the deep ocean and the surface, with implications for past, present, and future climates.
+			</p>
+			<p style="font-size:24px;"> 
+				<a href="#"><span class="fa fa-twitter" style="color:#333333;padding-left:2px;padding-right:2px;"></span></a>
+				<a href="#"><span class="fa fa-vimeo" style="color:#333333;padding-left:2px;padding-right:2px;"></span></a>
+				<a href="#"><span class="fa fa-github" style="color:#333333;padding-left:2px;padding-right:2px;"></span></a>
+				<a href="#"><span class="fa fa-bitbucket" style="color:#333333;padding-left:2px;padding-right:2px;"></span></a>
+				<a href="#"><img src="pics/rogger_icon.png" alt="rogger icon" class="imagestyle1" style="width:25px;padding-left:2px;padding-right:2px;"></a>
+			</p>
+		</div>
+		<div class = "col-sm-6">
+			<img src="pics/global_trajectories.png" class="img-responsive" alt="Portrait of myself, Henri Drake">
+		</div>
+	</div>
+</div>
+
+
+<!-- Snap banner when change window width -->
+<script>
+	function resize_function() {
+		var w = window.outerWidth;
+		if (w<768) {
+			document.getElementById("header-name").style.textAlign='center';
+			document.getElementById("header-title").style.textAlign='center';
+			document.getElementById("portrait").style.width='100%';
+			document.getElementById("portrait").style.maxWidth='350px';
+		} else {
+			document.getElementById("header-name").style.textAlign='left';
+			document.getElementById("header-title").style.textAlign='left';
+			document.getElementById("portrait").style.width='200px';
+		}
+	}
+</script>
+

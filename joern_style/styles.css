@@ -12,6 +12,7 @@ figcaption { display: block; font-style: italic; font-variant: small-caps; text-
 figure img { vertical-align: top; }
 .img_size {max-width: 400px}
 .mov_size {width: 400px; height: 220px;}
+.small_size {height: 10%; width: auto}
 .box-set { overflow: auto; padding-left: 45px; padding-right: 45px; margin: 0;}
 .box-right { float: right; padding-right: 0; margin-right: 0; }
 .box-left { float: left; padding-left: 0; margin-left: 0; }

@@ -1,0 +1,25 @@
+.bg-1 { 
+  background-color: #7fa2eb; /* Liquid Lavender */
+  color: #fbfbfe;
+}
+.bg-2 { 
+  background-color: #fbfbfe; /* Eggshell */
+  color: #333333;
+}
+.container-fluid {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.navbar-static-top .navbar-toggle .icon-bar {
+  background-color: #337ab7;
+}
+
+.imagestyle1 {
+position:relative;
+top:-2px;
+-webkit-filter:contrast(85%);
+filter:contrast(85%);
+}
