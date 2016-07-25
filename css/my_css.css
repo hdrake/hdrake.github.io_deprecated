@@ -58,11 +58,11 @@ filter:contrast(85%)
   border:2px solid #333333;
 }
 
-.figcaption {
-  padding-top:10px;
+figcaption {
+  padding-top:7px;
 }
 
-.figure {
- padding-top:15px;
- padding-bottom:15px;
+figure {
+ padding-top:20px;
+ padding-bottom:20px;
 }
