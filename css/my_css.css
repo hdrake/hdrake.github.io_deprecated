@@ -61,3 +61,8 @@ filter:contrast(85%)
 .figcaption {
   padding-top:10px;
 }
+
+.figure {
+ padding-top:15px;
+ padding-bottom:15px;
+}
