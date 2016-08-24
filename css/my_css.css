@@ -3,6 +3,10 @@
   color: #ffffff;
 }
 
+button::-moz-focus-inner {
+  border: 0;
+}
+
 .bg-white { 
   background-color: #ffffff; /* Eggshell */
   color: #333333;
