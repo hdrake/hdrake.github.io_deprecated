@@ -10,6 +10,13 @@
     background-color: #7fa2eb;
 }
 
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:hover, 
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #7fa2eb;
+}
+
 button::-moz-focus-inner {
   border: 0;
 }
