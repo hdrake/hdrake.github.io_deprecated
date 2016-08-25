@@ -118,8 +118,13 @@
 			var w = window.outerWidth;
 			if (w<768) {
 				document.getElementById("header-title").style.textAlign='center';
+				document.getElementById("portrait").style.width='100%';
+				document.getElementById("portrait").style.maxWidth='350px';
+				document.getElementById("portrait").className ="center-block img-rounded img-responsive";
 			} else {
 				document.getElementById("header-title").style.textAlign='left';
+				document.getElementById("portrait").style.width='180px';
+				document.getElementById("portrait").className ="img-rounded img-responsive";
 			}
 		}
 	</script>
