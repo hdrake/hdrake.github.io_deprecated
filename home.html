@@ -35,4 +35,16 @@
 	</div>
 </div>
 
+<script>
+	resize_function()
+	function resize_function() {
+		var w = window.outerWidth;
+		if (w<768) {
+			document.getElementById("portrait").style.width='100%';
+			document.getElementById("portrait").style.maxWidth='350px';
+		} else {
+			document.getElementById("portrait").style.width='180px';
+		}
+	}
+</script>
 
