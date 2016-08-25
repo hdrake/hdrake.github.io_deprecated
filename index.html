@@ -48,7 +48,6 @@
 		</div>
 	</div>
 
-
 	<!-- Main Body -->
 	<div id="main-body"></div>
 
@@ -68,7 +67,6 @@
 
 		// Handle navigation bar clicks
 		$('.navbar li').click(function(e) {
-			var bannerPic = document.getElementById('banner-pic');
 			var headerTitle = document.getElementById('header-title');
 			var $this = $(this);
 			if (!$this.hasClass('active')) {
@@ -80,31 +78,26 @@
 				case "liHome":
 					$("#header-title").html("<span class=\"banner-medium\">Henri Drake</span>");
 					$("#banner-text").attr("class","col-sm-12");
-					bannerPic.style.display='none';
 					$("#main-body").load("home.html");
 					break;
 				case "liResearch":
 					$("#header-title").html("<span class=\"banner-medium\">Research areas</span>");
 					$("#banner-text").attr("class","col-sm-12");
-					bannerPic.style.display='none';
 					$("#main-body").load("research.html");
 					break;
 				case "liPapers":
 					$("#header-title").html("<span class=\"banner-medium\">Refereed publications</span>");
 					$("#banner-text").attr("class","col-sm-12");
-					bannerPic.style.display='none';
 					$("#main-body").load("papers.html");
 					break;
 				case "liLife":
 					$("#header-title").html("<span class=\"banner-medium\">My life outside of academia</span>");
 					$("#banner-text").attr("class","col-sm-12");
-					bannerPic.style.display='none';
 					$("#main-body").load("life.html");
 					break;
 				case "liContact":
 					$("#header-title").html("<span class=\"banner-medium\">Contact information</span>");
 					$("#banner-text").attr("class","col-sm-12");
-					bannerPic.style.display='none';
 					$("#main-body").load("contact.html");
 					break;
 			}
