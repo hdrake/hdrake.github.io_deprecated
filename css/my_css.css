@@ -17,10 +17,6 @@
     background-color: #7fa2eb;
 }
 
-a:hover, a:active, a:focus, a:link, a:visited {
-  outline-style:solid;
-}
-
 .bg-white { 
   background-color: #ffffff; /* Eggshell */
   color: #333333;
