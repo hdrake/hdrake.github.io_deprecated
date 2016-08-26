@@ -21,6 +21,10 @@ a:focus {
     outline: none; 
 }
 
+object, embed { 
+  outline: 0;
+}
+
 .bg-white { 
   background-color: #ffffff; /* Eggshell */
   color: #333333;
