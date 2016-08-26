@@ -17,6 +17,10 @@
     background-color: #7fa2eb;
 }
 
+a:active {
+    outline: none;
+}
+
 .bg-white { 
   background-color: #ffffff; /* Eggshell */
   color: #333333;
