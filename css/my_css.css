@@ -21,10 +21,6 @@ a:focus {
     outline: none; 
 }
 
-video { 
-  outline: 0;
-}
-
 .bg-white { 
   background-color: #ffffff; /* Eggshell */
   color: #333333;
