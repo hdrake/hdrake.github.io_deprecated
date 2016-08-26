@@ -21,6 +21,10 @@ button::-moz-focus-inner {
   border: 0;
 }
 
+video::-moz-focus-inner {
+  border: 0;
+}
+
 a:focus { 
     outline: none; 
 }
