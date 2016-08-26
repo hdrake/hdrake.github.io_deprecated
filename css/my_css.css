@@ -17,8 +17,12 @@
     background-color: #7fa2eb;
 }
 
-a:active {
-    outline: none;
+button::-moz-focus-inner {
+  border: 0;
+}
+
+video::-moz-focus-inner {
+  border: 0;
 }
 
 .bg-white { 
