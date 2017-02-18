@@ -1,44 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Henri Drake</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-<div class="container-fluid bg-white">
-	<div class="row">
-		<div class="col-sm-6">
-			<h3>Biography</h3>
-			<p> I grew up in San Francisco, California, where minor earthquakes frequently interrupted classes and first sparked my interest in Earth science. In 8th grade I shadowed a Principal Investigator at the United States Geological Survey and attended a mind-blowing seminar on a statistical method for earthquake prediction. Since that day, I have been determined to spend the rest of my life researching how the Earth works. However, I always enjoyed the theoretical challenge of mathematics and for years struggled to balance my interest in mathematics with my interest in Earth science. The field of Geophysical Fluid Dynamics (GFD) was the obvious solution to my conundrum. My dream is to spend the next decade doing fundamental research in Geophysical Fluid Dynamics before hopefully becoming either a NASA astronaut or a university professor.
-			</p>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+	<link rel="stylesheet" href="css/my_css.css">
+
+</head>
+
+<body class="bg-white" onload="resize_function()" onresize="resize_function()"> 
+	<!-- Collapsible Navigation Bar -->
+	<header class="navbar navbar-default" role="navigation">
+		<div class="container-fluid" style="padding-top:0px; padding-bottom:0px;">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active" id="liHome"><a href="/test/index.html">Home</a></li>
+					<li id="liResearch"><a href="/test/research.html" id="aResearch">Research</a></li>
+					<li id="liPapers"><a href="/test/papers.html" id="aPapers">Papers</a></li>
+					<li id="liLife"><a href="/test/life.html" id="aLife">Bio</a></li>
+					<li id="liContact"><a href="/test/contact.html" id="aContact">Contact</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class = "col-sm-6">
-			<figure>
-				<img src="pics/rocket.png" class="img-responsive center-block img-border" alt="Henri sending a stomp-rocket off to space." style="width:70%;">
-				<figcaption class="center-block" style="padding-right:15%;padding-left:15%">Launching stomp-rockets with my best friend and little brother.</figcaption>
-			</figure>
+	</header>
+
+	<!-- Banner -->
+	<div  class="container-fluid bg-blue">
+		<div class="row">
+			<div class="col-sm-12" id="banner-text">
+				<p id="header-title"><span class="banner-large">Henri Drake</span></p>
+			</div>
 		</div>
 	</div>
-	<div class="row">
-		<div class="col-sm-6">
-			<h3>Outdoor Interests</h3>
-			<p> I enjoy running, hiking, and skateboarding in my free time. I ran on the varsity team for two years at <a href="http://haverfordathletics.com/sports/mxc/index">Haverford College</a> and although I am no longer on a team, I still run in long distance races every few months. I try to run everyday and keep my daily running log at <a href="http://rogger.co/hdrake">rogger.co</a>. I recently lead a 150 mile section of the Pacific Crest Trail (PCT) with friends and hope to complete the remaining 2250 miles over the coming decade. I also recently reinvigorated my childhood interest in skateboarding and am working towards landing a kickflip.
-			</p>
+
+	<!-- Main Body -->
+	<div id="main-body"></div>
+
+	<!-- JQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<div class="container-fluid bg-white">
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Biography</h3>
+				<p> I grew up in San Francisco, California, where minor earthquakes frequently interrupted classes and first sparked my interest in Earth science. In 8th grade I shadowed a Principal Investigator at the United States Geological Survey and attended a mind-blowing seminar on a statistical method for earthquake prediction. Since that day, I have been determined to spend the rest of my life researching how the Earth works. However, I always enjoyed the theoretical challenge of mathematics and for years struggled to balance my interest in mathematics with my interest in Earth science. The field of Geophysical Fluid Dynamics (GFD) was the obvious solution to my conundrum. My dream is to spend the next decade doing fundamental research in Geophysical Fluid Dynamics before hopefully becoming either a NASA astronaut or a university professor.
+				</p>
+			</div>
+			<div class = "col-sm-6">
+				<figure>
+					<img src="pics/rocket.png" class="img-responsive center-block img-border" alt="Henri sending a stomp-rocket off to space." style="width:70%;">
+					<figcaption class="center-block" style="padding-right:15%;padding-left:15%">Launching stomp-rockets with my best friend and little brother.</figcaption>
+				</figure>
+			</div>
 		</div>
-		<div class = "col-sm-6">
-			<figure>
-				<img src="pics/tahoe_small.jpg" class="img-responsive center-block img-border" alt="Hiking near Donner Lake, California." style="width:80%;">
-				<figcaption class="center-block" style="padding-right:10%;padding-left:10%">Hiking at Donner Pass, California.</figcaption>
-			</figure>
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Outdoor Interests</h3>
+				<p> I enjoy running, hiking, and skateboarding in my free time. I ran on the varsity team for two years at <a href="http://haverfordathletics.com/sports/mxc/index">Haverford College</a> and although I am no longer on a team, I still run in long distance races every few months. I try to run everyday and keep my daily running log at <a href="http://rogger.co/hdrake">rogger.co</a>. I recently lead a 150 mile section of the Pacific Crest Trail (PCT) with friends and hope to complete the remaining 2250 miles over the coming decade. I also recently reinvigorated my childhood interest in skateboarding and am working towards landing a kickflip.
+				</p>
+			</div>
+			<div class = "col-sm-6">
+				<figure>
+					<img src="pics/tahoe_small.jpg" class="img-responsive center-block img-border" alt="Hiking near Donner Lake, California." style="width:80%;">
+					<figcaption class="center-block" style="padding-right:10%;padding-left:10%">Hiking at Donner Pass, California.</figcaption>
+				</figure>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Indoor Interests</h3>
+				<p> I am an avid fan of poet <a href="https://en.wikipedia.org/wiki/Gary_Snyder">Gary Snyder</a>, print-maker <a href="http://tomkillion.com/prints-1/">Tom Killion</a>, and film director <a href="http://www.imdb.com/name/nm0594503/">Hayao Miyazaki</a>. I hope to one day have an understanding of oceans, winds, and mountains that rivals these three japanese (or "faux-japanese") genius artists. I have yet to go to Japan but I am hopeful that a career in Oceanography will eventually bring me there for a conference or as part of a research cruise.
+				</p>
+			</div>
+			<div class="col-sm-6">
+				<figure>
+					<img src="pics/killion_small.png" class="img-responsive center-block img-border" alt="Climbing a boulder near Donner Lake, California" style="width:80%;">
+					<figcaption class="center-block" style="padding-right:10%;padding-left:10%">Carmel Bay, just south of my hometown of San Francisco, California. [<a href="http://tomkillion.com/prints-1/">Source: Tom Killion</a>]</figcaption>
+				</figure>
+			</div>
 		</div>
 	</div>
 
-	<div class="row">
-		<div class="col-sm-6">
-			<h3>Indoor Interests</h3>
-			<p> I am an avid fan of poet <a href="https://en.wikipedia.org/wiki/Gary_Snyder">Gary Snyder</a>, print-maker <a href="http://tomkillion.com/prints-1/">Tom Killion</a>, and film director <a href="http://www.imdb.com/name/nm0594503/">Hayao Miyazaki</a>. I hope to one day have an understanding of oceans, winds, and mountains that rivals these three japanese (or "faux-japanese") genius artists. I have yet to go to Japan but I am hopeful that a career in Oceanography will eventually bring me there for a conference or as part of a research cruise.
-			</p>
-		</div>
-		<div class="col-sm-6">
-			<figure>
-				<img src="pics/killion_small.png" class="img-responsive center-block img-border" alt="Climbing a boulder near Donner Lake, California" style="width:80%;">
-				<figcaption class="center-block" style="padding-right:10%;padding-left:10%">Carmel Bay, just south of my hometown of San Francisco, California. [<a href="http://tomkillion.com/prints-1/">Source: Tom Killion</a>]</figcaption>
-			</figure>
-		</div>
-	</div>
-</div>
+	<script>
+		resize_function()
+		function resize_function() {
+			var w = window.outerWidth;
+			if (w<768) {
+				document.getElementById("portrait").style.width='100%';
+				document.getElementById("portrait").className ="center-block img-rounded img-responsive";
+			} else {
+				document.getElementById("portrait").style.width='240px';
+				document.getElementById("portrait").className ="img-rounded img-responsive";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
