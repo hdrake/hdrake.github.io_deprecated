@@ -1,24 +1,97 @@
 
-<!-- Text -->
-<div class="container-fluid bg-white">
-	<div class="row">
-		<div class="col-sm-12">
-			<h3> In Press </h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Henri Drake</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-			<p> <!-- 7. Drake, H. Tracer Analysis of Bottom Boundary Layer Upwelling --> </p>
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
 
-			<p> <!-- 6. Tarshish, N. Eddy Tracking Methods: Eulerian vs. Lagrangian --> </p>
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-			<p> <!-- 5. Weijer, W. Downwelling in the Zapiola Anticyclone --> </p>
+	<link rel="stylesheet" href="css/my_css.css">
 
-			<p> <!-- 4. Gray, A. Argo-derived Southern Ocean Upwelling Pathways --> </p>
+</head>
 
-			<p> <!-- 3. Tamsitt, V. Southern Ocean Upwelling Spiral --> </p>
+<body class="bg-white" onload="resize_function()" onresize="resize_function()"> 
+	<!-- Collapsible Navigation Bar -->
+	<header class="navbar navbar-default" role="navigation">
+		<div class="container-fluid" style="padding-top:0px; padding-bottom:0px;">
+			<div class="navbar-header">
+				<button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav">
+					<li class="active" id="liHome"><a href="/test/index.html">Home</a></li>
+					<li id="liResearch"><a href="/test/research.html" id="aResearch">Research</a></li>
+					<li id="liPapers"><a href="/test/papers.html" id="aPapers">Papers</a></li>
+					<li id="liLife"><a href="/test/life.html" id="aLife">Bio</a></li>
+					<li id="liContact"><a href="/test/contact.html" id="aContact">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</header>
 
-			<p> <!-- 2. Drake, H. Lagrangian upwelling timescales --> </p>
-
-			<p> <!-- E. van Sebille <i>et al</i>. Lagrangian Ocean Analysis: Fundamentals and Practices. <i>Ocean Modelling</i> (submitted). --> </p>
+	<!-- Banner -->
+	<div  class="container-fluid bg-blue">
+		<div class="row">
+			<div class="col-sm-12" id="banner-text">
+				<p id="header-title"><span class="banner-large">Papers</span></p>
+			</div>
 		</div>
 	</div>
-</div>
 
+	<!-- Main Body -->
+	<div id="main-body"></div>
+
+	<!-- JQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	
+	<!-- Text -->
+	<div class="container-fluid bg-white">
+		<div class="row">
+			<div class="col-sm-12">
+				<h3> Submitted </h3>
+				<hr>
+
+				<p>  Tamsitt, V., <b>Drake, H. F.</b>, Morrison, A. K., Talley, L. D., Dufour, C. A., Gray, A. R., Griffies, S. M., Mazloff, M. R., Sarmiento, J. L., Wang, J., Weijer, W. Spiraling up: pathways of global deep water to the surface of the Southern Ocean. Under review.
+				</p><br>
+
+				<p> van Sebille, E., Griffies, S. M., Abernathey, R., Adams, T. P., Berloff, P., Biastoch, A., Blanke, B., Chassignet, E. P., Yu Cheng, Y., Cotter, C. J., Deleersnijder, E., Döös, K., <b>Drake, H. F.</b>, Drijfhout, S., Gary, S. F., Heemink, A. W., Kjellsson, J., Koszalka, I. M., Lange, M., Lique, C., MacGilchrist, G. A., Marsh, R., Adame, C. G. M., McAdam, R., Nencioli, F., Paris, C. B., Piggott, M. D., Polton, J. A., Rühs, S., Shah, S. H. A. M., Thomas, M. D., Wang, J., Wolfram, P. J., Zanna, L., Zika, J. D. Lagrangian ocean analysis: fundamentals and practices. Under review.
+				</p>
+
+
+			</div>
+		</div>
+	</div>
+
+
+	<script>
+		resize_function()
+		function resize_function() {
+			var w = window.outerWidth;
+			if (w<768) {
+				document.getElementById("portrait").style.width='100%';
+				document.getElementById("portrait").className ="center-block img-rounded img-responsive";
+			} else {
+				document.getElementById("portrait").style.width='240px';
+				document.getElementById("portrait").className ="img-rounded img-responsive";
+			}
+		}
+	</script>
+
+</body>
+
+</html>
