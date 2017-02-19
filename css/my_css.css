@@ -35,20 +35,17 @@ filter:contrast(85%)
 }
 
 .banner-large {
-  color:#ffffff;
   font-size:30pt;
   font-weight:500;
 }
 
 .banner-small {
-  color:#ffffff;
   font-size:18pt;
   line-height: 0.965;
   font-weight:400;
 }
 
 .banner-medium {
-  color:#ffffff;
   font-size:24pt;
   font-weight:400;
 }
