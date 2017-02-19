@@ -21,10 +21,7 @@ a:focus {
 
 /* navbar */
 .navbar {
-  margin-bottom: 0;
-}
-
-nav .container-fluid{
+  margin-bottom:0;
   padding-left:30px;
 }
 
