@@ -19,8 +19,13 @@ a:focus {
   padding-left: 30px;
 }
 
+/* navbar */
 .navbar {
   margin-bottom: 0;
+}
+
+.navbar-default {
+    background-color: #ffffff;
 }
 
 .navbar {
