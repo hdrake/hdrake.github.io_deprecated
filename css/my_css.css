@@ -22,7 +22,8 @@ a:focus {
 /* navbar */
 .navbar {
   margin-bottom:0;
-  padding-left:0px;
+  margin-left:0;
+  padding-left:30px;
 }
 
 .navbar-default {
