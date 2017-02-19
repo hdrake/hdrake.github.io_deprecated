@@ -90,6 +90,6 @@ figure {
 .banner-img {
   width:100%;
   height:200px;
-  background-image:url('pics/banner.jpg');
+  background-image:url('../pics/banner.jpg');
   background-size:cover;
 }
