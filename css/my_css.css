@@ -15,8 +15,8 @@ a:focus {
 .container-fluid {
   padding-top: 15px;
   padding-bottom: 15px;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 /* navbar */
