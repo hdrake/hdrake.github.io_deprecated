@@ -42,7 +42,7 @@ filter:contrast(85%)
 }
 
 .banner-large {
-  font-size:30pt;
+  font-size:28pt;
   font-weight:500;
 }
 
@@ -94,7 +94,7 @@ figure {
 
 .banner-img {
   width:100%;
-  height:150px;
+  height:160px;
   padding-top:5px;
   background-image:url('../pics/banner_short.jpg');
   background-size:cover;
