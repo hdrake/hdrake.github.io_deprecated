@@ -63,11 +63,93 @@
 	<!-- Text -->
 	<div class="container-fluid bg-white">
 
-		<!-- Mixing-driven overturning circulation -->
+		<!-- Deep ocean tracer transport -->
 		<div class="row">
 			<div class="col-sm-6">
-				<h3>Mixing-driven overturning circulation</h3>
-				<p> At the high latitudes of the Arctic and Antarctic, cold, salty, and hence dense surface waters sink to fill the bottom of the ocean. Since seawater mass is conserved in the ocean, we know that these abyssal waters must return to the upper ocean elsewhere. Oceanographers originally theorized that these dense abyssal waters upwelled by mixing vigorously with lighter overlaying deep waters. This theory was subsequently challenged by observations of the vertical profile of ocean mixing. Turbulent ocean mixing was shown to be much too weak in most of the ocean but increased dramatically near the sea floor, where powerful internal waves break and mix the water column (see schematic to the right). Since the density of seawater increases with depth, deep interior ocean water mixes preferentially with denser waters and thus the mixing results in sinking, not upwelling, in the interior ocean. Only within a few dozen meters of the sea floor, where the sea floor inhibits mixing, do we expect ocean mixing to result in upwelling. In my research, I use theory and idealized models to explore how this bottom-intensified ocean turbulence interacts with sloping boundaries (ocean ridges and continental slopes) to bring these abyssal waters back towards the surface.
+				<h3>Deep ocean tracer transport</h3>
+				<p>The flows of climatically-important tracers, like heat and carbon, into the deep ocean shape Earth's climate change trajectory and are thus important to understand deeply enough that they can be included in ocean models. The largest of these flows can be "resolved" by a numerical ocean model and emerge naturally from solving the equations of fluid mechanics on its discretized grid, while those that occur on scales smaller than a grid cell need to be added in separately using "parameterizations". Parameterization is the process of distilling the essence of a physical process into a simple formula or algorithm that only depends on the "resolved" environment, thus giving us a self-consistent way of "closing" the model without leaving out any important physics. The process of parameterization is complicated by the turbulent nature of oceanic flows, which links fluctuations at the smallest scales (a few cm) to global currents (10,000 km) and makes the ocean inherently chaotic and unpredictable. Developing a parameterization requires both theoretical understanding of the process and a training data set for calibration; in-situ observations and high-resolution simulations that resolve the process are both commonly used. While many of the most important surface mixed layer processes are well understood and have been successfully parameterized, the equivalent processes in the bottom mixed layer are poorly understood.
+				<br><br>
+				In my research, I develop conceptual models of deep ocean transport processes and test these ideas with available data and quasi-realistic simulations. I plan on using these theories, simulations, and observations to improve theoretical understanding of the global ocean circulation, develop new parameterizations for climate models, and inform future observations campaigns.
+				</p>
+
+			</div>
+			<div class = "col-sm-6">
+				<figure>
+					<img src="pics/BBTRE_lowres.gif" class="center-block img-responsive" alt="A movie showing how a turbulent field of eddies stirs an blob of purple tracer around a narrow and hilly deep ocean canyon The movie shows that the blob of tracer, initially just a few km in diameter, gets diffused across an area of about 60km by 60km over the course of 200 days." style="width:90%;" id="figure">
+					<figcaption style="padding-left:5%;padding-right:5%" id="figure-caption">The turbulent three-dimensional transport of a spherical blob of tracer in a deep ocean canyon. This simulation mimics a real ocean expedition in which 100 kg of Sulfur Hexafluoride was injected 4000 meters below the ocean surface in the Brazil Basin and was traced out over the course of several years [Source: Drake et al. (in prep)]</figcaption>
+				</figure>
+
+			</div>
+		</div>
+		<hr>
+
+
+		<!-- Dynamics of the global overturning circulation -->
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Overturning circulation theory</h3>
+				<p> At the high latitudes of the Arctic and Antarctic, cold, salty, and hence dense surface waters sink to fill the dark abyss of the deep ocean. Since seawater mass is conserved in the ocean, we know that these deep waters must return to the surface elsewhere. It is convenient to split up this global overturning circulation into two vertically stacked (and partially connected) cells with different dynamics: a wind-driven adiabatic (along density surfaces) upper cell and a mixing-driven diabatic (across density surfaces) lower cell. In the upper cell, dense waters form in the North Atlantic during winter storms and flow south along density surfaces towards the Southern Ocean, where their upwelling by a "residual circulation" along density surfaces is the result of a competition between winds and turbulent eddies. These newly upwelled waters are then lightened by an influx of freshwater from melting sea ice, and transported back northwards to close the upper cell. In the lower cell, on the other hand, the bottom waters that form off the coast of Antarctica are so dense that they do not outcrop to the surface anywhere else in the ocean, and thus must upwell "diabatically", i.e. by some process that changes their density. Oceanographers originally theorized that these dense abyssal waters upwelled by mixing vigorously with lighter waters. This theory was later challenged by observations: the turbulent mixing measured in the open ocean was too weak to drive the required upwelling. Eventually, observations revealed that turbulence levels increased dramatically near the jagged hills lining the sea floor, where we now know powerful internal waves break and mix up the water column. These new observations seem paradoxical at first: since the density of seawater also increases with depth, the logical conclusion was that deep water mixes preferentially with <i>denser</i> waters and thus the mixing results in sinking, not upwelling! This paradox is resolved by considering what happens right at the bottom of the ocean, where the mixing runs into the seafloor and causes a thin but vigorous burst of upwelling (see schematic to the right).
+				<br><br>
+				In my research, I use geophysical theory and numerical simulations to provide insights into the various processes described above and the patterns that emerge when they are combined.
+				</p>
+
+			</div>
+			<div class = "col-sm-6">
+				<figure>
+					<img src="pics/pgcm_circulation_modified.png" class="center-block img-responsive" alt="A schematic of the mixing-driven overturning circulation: a depth-longitude view of a typical ocean basin with a contentinental slope on the left and a rugged mid ocean ridge on the right. Mixing-driven flow along the flank of the mid-ocean ridge drives a dipole of up- and down-welling flows which combine to equal the meridional overturning circulation." style="width:90%;" id="figure">
+					<figcaption style="padding-left:5%;padding-right:5%" id="figure-caption">A schematic of how bottom-enhanced turbulence above the rough topography of the mid-ocean ridge drives up– and down–welling mixing layer flows. The net effect of these abyssal mixing layer flows is to transform dense bottom waters into lighter deep waters, a key part of the large-scale meridional overturning circulation that keeps the global ocean moving. [<a href="https://journals.ametsoc.org/jpo/article/50/8/2203/348530/Abyssal-Circulation-Driven-by-Near-Boundary-Mixing">Source: Drake et al. 2020</a>]</figcaption>
+				</figure>
+
+			</div>
+		</div>
+		<hr>
+
+		<!-- Insights from simple climate models -->
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Insights from simple climate models</h3>
+				<p>My preferred scientific approach is to develop the simplest possibly model that can be used to answer a given scientific question. The scientific problem that I am most passionate about– and which connects all of my research interests– is the long-term (10–10,000 year) evolution of Earth's climate. On these long timescales, the exchange of heat and carbon between atmosphere and the ocean, and their distribution within the deep ocean, is a crucial control on Earth's climate. In the context of ongoing anthropogenic climate change, humans emit greenhouse gases, which weakens the atmosphere's ability to cool itself by radiating heat to space, and causes the surface to warm. The atmosphere and surface of the planet responds to this warming effect (or "forcing"), causing a self-amplification of the warming in the net (a "positive feedback"). Thankfully, about 30% of this potential global warming is delayed for centuries as the ocean takes up much of the excess heat. These three key processes: greenhouse gas radiative forcing, radiative feedbacks, and ocean heat uptake, form the three key parameters in a widely used zero-dimensional "energy balance model" of Earth's climate. This extremely simple model can be tuned to more complicated "general circulation models" to yield remarkably accurate projections of global warming (see "Evaluating historical climate models" below) and form the basis of many climate-economic models of climate change (see my <i>extremely</i> simple one in the schematic on the right).
+				<br><br>	
+				I am interested in what determines the rate of ocean heat uptake in these conceptual energy balance models, how ocean heat uptake might change over time, and any implications this might have on climate policy. I also plan on continuing to develop <a href="https://github.com/hdrake/ClimateMARGO.jl">ClimateMARGO.jl</a>, an extremely simple climate-economic optimization model I created, and using it to answer fundamental questions about possible climate change trajectories, and how these depend on our understanding (or lack of understanding) of climate science.
+				</p>
+
+			</div>
+			<div class = "col-sm-6">
+				<figure>
+					<img src="pics/Margo_schematic.png" class="center-block img-responsive" alt="A cartoony schematic showing the causal chain of climate damages, and how four different interventions that can stop it: greenhouse gas emissions (which can be mitigated) cause CO2 concentrations to accumulate in the atmosphere (which can be reversed by carbon dioxide removal); rising greenhouse gas concentrations increase the radiative forcing, which warms the atmosphere (which can be cooled by solar radiation Geoengineering); a warming planet causes a myriad of changes (some of which can be adapated to), leading to climate damages." style="width:90%;" id="figure">
+					<figcaption style="padding-left:5%;padding-right:5%" id="figure-caption">Schematic of the causal chain from greenhouse gas emissions to climate damages, including the unique effects of four climate controls: emissions Mitigation, carbon dioxide Removal, Geoengineering by solar radiation management, and Adaptation. Climate controls yield benefits in terms of avoided climate damages, which are balanced against control deployment costs. [<a href="https://eartharxiv.org/5bgyc/">Source: Drake et al. (preprint)</a>]</figcaption>
+				</figure>
+
+			</div>
+		</div>
+		<hr>
+
+		<!-- Evaluating Climate Models -->
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Evaluating historical climate models</h3>
+				<p>How accurate are numerical climate models? On what basis– if any– can we trust their projections of future human-caused climate change? While related fields like Numerical Weather Forecasting have the advantage of real-time feedback ("The weather model predicting it would be sunny today, but it's raining!"), the human-induced climate change take <i>decades</i> to emerge from the chaos of natural variability. Unfortunately, we don't have decades to wait: we need climate action <i>now</i> to avoid the most catastrophic climate impacts. Climate scientists typically use indirect methods to build confidence in climate model projections: developing better understand of the fundamental climate physics processes, reducing the uncertainty in the spread across different climate models, and improving the how well models reproduce historical observations.
+				<br><br>
+				Over the last few years, my collaborators and I have been taking a different approach: while we cannot just wait decades to find out whether <i>today's</i> climate projections come true, we can dig up decades-old projections and see how well they held up. (Spoiler: they did pretty well; see the figure on the right). By combing the old IPCC archives and digitizing historical papers, we've now built up a unique dataset of nearly every single climate model projection ever made. The dataset is rich and I am excited about exploring it futher!</p>
+
+			</div>
+			<div class = "col-sm-0">
+			</div>
+			<div class = "col-sm-6">
+				<figure>
+					<img src="pics/NASA_GISS_figure.png" class="center-block img-responsive" alt="A figure showing how projections of global warming from the NASA GISS climate model in 1988 compare to observations of warming since then: the simulation projections and the obervations overlap well, whether your consider warming as a function of time or as a function of radiative forcing." style="width:90%;" id="figure">
+					<figcaption style="padding-left:5%;padding-right:5%" id="figure-caption">A schematic of how bottom-enhanced turbulence above the rough topography of the mid-ocean ridge drives up– and down–welling mixing layer flows. The net effect of these abyssal mixing layer flows is to transform dense bottom waters into lighter deep waters, a key part of the large-scale meridional overturning circulation that keeps the global ocean moving. [<a href="https://pubs.giss.nasa.gov/abs/ha08910q.html">Source: Hausfather et al. 2020</a>]</figcaption>
+				</figure>
+
+			</div>
+		</div>
+		<hr>
+
+		<!-- Mixing-driven overturning circulation 
+		<div class="row">
+			<div class="col-sm-6">
+				<h3>Mixing-driven overturning circulations</h3>
+				<p> At the high latitudes of the Arctic and Antarctic, cold, salty, and hence dense surface waters sink to fill the dark abyss of the deep ocean. Since seawater mass is conserved in the ocean, we know that these abyssal waters must return to the upper ocean elsewhere. Oceanographers originally theorized that these dense abyssal waters upwelled by mixing vigorously with lighter overlaying deep waters. This theory was later challenged by observations of the vertical profile of ocean mixing: while the measured turbulent mixing was too weak to drive this upwelling throughout the upper half the ocean, the turbulence levels increased dramatically near the jagged hills lining the sea floor, where powerful internal waves break and mix the water column. These new observations seem paradoxical at first: since the density of seawater also increases with depth, deep interior ocean water mixes preferentially with denser waters and thus the mixing results in sinking, not upwelling. This paradox is resolved by considering what happens right at the bottom of the ocean, where the mixing runs into the seafloor and causes a thin but vigorous burst of upwelling (see schematic to the right). In my research, I use theory and idealized models to explore how this bottom-intensified ocean turbulence interacts with sloping boundaries (ocean ridges, continental slopes, and deep ocean canyons) to bring these abyssal waters back towards the surface.
 				</p>
 
 			</div>
@@ -75,15 +157,16 @@
 			</div>
 			<div class = "col-sm-5">
 				<figure>
-					<img src="pics/OceanMixing_small.png" class="center-block img-responsive" alt="Ocean Mixing" style="width:80%;" id="figure">
-					<figcaption style="padding-left:10%;padding-right:10%" id="figure-caption">A schematic of turbulent processes in the global ocean. I am particularly interested in abyssal ocean turbulence. [<a href="https://www.gfdl.noaa.gov/ocean-mixing/">Source: GFDL</a>]</figcaption>
+					<img src="pics/pgcm_circulation_modified.png" class="center-block img-responsive" alt="A schematic of the mixing-driven overturning circulation: a depth-longitude view of a typical ocean basin with a contentinental slope on the left and a rugged mid ocean ridge on the right. Mixing-driven flow along the flank of the mid-ocean ridge drives a dipole of up- and down-welling flows which combine to equal the meridional overturning circulation." style="width:80%;" id="figure">
+					<figcaption style="padding-left:10%;padding-right:10%" id="figure-caption">A schematic of how bottom-enhanced turbulence above the rough topography of the mid-ocean ridge drives up– and down–welling mixing layer flows. The net effect of these abyssal mixing layer flows is to transform dense bottom waters into lighter deep waters, a key part of the large-scale meridional overturning circulation that keeps the global ocean moving. [<a href="https://journals.ametsoc.org/jpo/article/50/8/2203/348530/Abyssal-Circulation-Driven-by-Near-Boundary-Mixing">Source: Drake et al. 2020</a>]</figcaption>
 				</figure>
 
 			</div>
 		</div>
 		<hr>
+		-->
 
-		<!-- Wind-driven overturning circulation -->
+		<!-- Wind-driven overturning circulation
 		<div class="row">
 			<div class="col-sm-6">
 				<h3>Wind-driven overturning circulation</h3>
@@ -101,8 +184,8 @@
 			</div>
 		</div>
 		<hr>
-
-		<!-- Lagrangian analysis of geophysical flows -->
+		-->
+		<!-- Lagrangian analysis of geophysical flows
 		<div class="row">
 			<div class="col-sm-6">
 				<h3> Lagrangian analysis of geophysical flows</h3>
@@ -118,6 +201,7 @@
 				</figure>
 			</div>
 		</div>
+		 -->
 	</div>
 
 	<script>

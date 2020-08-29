@@ -59,7 +59,6 @@
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
-	
 	<div class="container-fluid bg-white">
 		<div class="row">
 			<div class="col-sm-6">
@@ -68,21 +67,22 @@
 					<img id="portrait" src="pics/Henri_Drake_Portrait.jpg" class="img-rounded img-responsive" style="width:240px" alt="Portrait of myself, Henri Drake">
 					</div>
 				</div>
-				<h3>Research Interests</h3>
-				<p> I am a PhD student working with <a href="http://ferrari.mit.edu/">Raffaele Ferrari</a> in the Massachusetts Institute of Technology / Woods Hole Oceanographic Institute Joint Program in Physical Oceanography. The goal of my dissertation research is to understand the processes controlling the abyssal meridional overturning circulation and their potential roles in controlling global climate. In particular, I am studying the various forms of geophysical turbulence that energize and shape deep ocean currents: O(10 m) small-scale tidally driven turbulence, O(1 km) sub-mesoscale instabilities in bottom boundary layer, and O(100 km) mesoscale geostrophic turbulence, all of which are poorly understood and remain unresolved in global climate models. By the end of my dissertation, I hope to leverage our improved understanding of these physical processes to interpret the tracer budgets (heat, carbon, nutrients, etc) through which ocean circulation influences climate.
+				<h3>About me</h3>
+				<p> I am a 5th year PhD student working with <a href="http://ferrari.mit.edu/">Raffaele Ferrari</a> in the Massachusetts Institute of Technology / Woods Hole Oceanographic Institute Joint Program in Physical Oceanography. The goal of my dissertation research is to understand the processes controlling the abyssal meridional overturning circulation and their potential roles in controlling global climate. In particular, I am researching how turbulence at the bottom of the ocean drives a global overturning circulation. In my dissertation I argue that this global overturning current is controlled by the details of turbulence in the bottom few hundred meters of the ocean and the local topography (slopes, hills, and canyons), all of which are currently unresolved and absent from global climate models. I am broadly interested in the history and philosophy of climate modelling and questions like: how accurate have historical models been at projecting future climate changes? I also enjoy developing open-source software, such as my new package <a href="https://github.com/hdrake/ClimateMARGO.jl">ClimateMARGO.jl</a>, which is an extremely simple climate-economic model for quantitively exploring different climate policy options, and making beautiful visualizations that make my science more accessible, such as the movie to the right. I am passionate about making science more inclusive, so that a flourishing community of diverse scientists can search for equitable solutions to societies' most pressing problems.
 				</p>
 
 				<p>
-				I have broad interests in the dynamics of Earth's climate, but the topics I am actively working on are:
+				I have broad interests in the dynamics of Earth's climate on long (10 to 10,000 year timescales), but the topics I am actively working on are:
 				<ol>
 	  				<li>meridional overturning circulation dynamics,</li>
-	  				<li>bottom mixing layer dynamics,</li>
-	  				<li>the internal wave continuum and deep ocean mixing,</li>
-	  				<li>baroclinic instability and turbulence,</li>
-	  				<li>physical processes that govern centennial- and millenial-scale climate change,</li>
-	  				<li>the predictive skill of climate models on mutli-decadal+ timescales</li>
+					<li>abyssal mixing layer dynamics,</li>
+					<li>submesoscale-topographic interactions,</li>
+	  				<li>tidally-generated internal waves and deep ocean mixing,</li>
+	  				<li>the role of the ocean in centennial- and millenial-scale climate change,</li>
+					<li>the predictive skill of climate models on mutli-decadal timescales,</li>
+					<li>the role of uncertainty (and science) in climate policy.</li>
   				</ol>
-  				Topics 1-5 relates to my thesis work while topic 6 relates to some fun side projects. If you share any of the above interests and/or would like to collaborate, please get in touch!
+  				Topics 1-4 relates to my thesis work while topic 5-7 relates to some fun side projects. If you share any of the above interests and/or would like to collaborate, please get in touch!
 				</p>
 
 
@@ -91,22 +91,14 @@
 					<a href="https://twitter.com/henrifdrake"><span class="fa fa-twitter" style="color:#333333;padding-left:2px;padding-right:2px;"></span></a>
 					<a href="https://vimeo.com/hdrake"><span class="fa fa-vimeo" style="color:#333333;padding-left:2px;padding-right:2px;"></span></a>
 					<a href="https://github.com/hdrake"><span class="fa fa-github" style="color:#333333;padding-left:2px;padding-right:2px;"></span></a>
+					<a href="https://scholar.google.com/citations?user=PToRK3cAAAAJ&hl=en"><img src="pics/google_scholar_black2.png" alt="Google scholar" style="height:25px;padding-left:2px;padding-right:2px;padding-bottom:2px"></a>
 				</p>
 			</div>
 			<div class = "col-sm-6">
-				<div class="video-container" style="padding-left:3%;padding-right:3%">
-					<iframe src="https://player.vimeo.com/video/182024460" frameborder="0"></iframe> 
-				</div>
-
-				<!--
-				<video class="center-block" style="width:94%;" controls poster="video/global_trajectories_poster.png">
-					<source src="videos/global_trajectories.mp4" type="video/mp4">
-					Your browser does not support HTML5 video.
-					frameborder="0"
-				</video>
-				-->
-
-				<p style="padding-top:10px;padding-left:3%;padding-right:3%"> Trajectories of virtual water parcels in the deep Southern Ocean [Source: Henri Drake] </p>
+				<figure>
+					<img src="pics/BBTRE_lowres.gif" class="center-block img-responsive" alt="A movie showing how a turbulent field of eddies stirs an blob of purple tracer around a narrow and hilly deep ocean canyon The movie shows that the blob of tracer, initially just a few km in diameter, gets diffused across an area of about 60km by 60km over the course of 200 days." style="width:90%;" id="figure">
+					<figcaption style="padding-left:5%;padding-right:5%" id="figure-caption">The turbulent three-dimensional transport of a spherical blob of tracer in a deep ocean canyon. This simulation mimics a real ocean expedition in which 100 kg of Sulfur Hexafluoride was injected 4000 meters below the ocean surface in the Brazil Basin and was traced out over the course of several years [Source: Drake et al. (in prep)]</figcaption>
+				</figure>
 			</div>
 		</div>
 		<hr style="margin-bottom:-1em;">
@@ -117,6 +109,7 @@
 			<div class="col-sm-6">
 				
 				<h3> News </h3>
+				<p> 08/23/2020 - The first chapter of my PhD dissertation, a theoretical study of the deep ocean circulation, is now published in the <a href="https://journals.ametsoc.org/jpo/article/50/8/2203/348530/Abyssal-Circulation-Driven-by-Near-Boundary-Mixing"><i>Journal of Physical Oceanography</i></a>!</p>
                 <p> 12/04/2019 - Our new paper evaluating historical climate model projections of global warming is now published in <a href="https://agupubs.onlinelibrary.wiley.com/doi/abs/10.1029/2019GL085378"><i>Geophysical Research Letters</i></a>. See coverage by <a href="https://www.nytimes.com/aponline/2019/12/04/science/ap-us-sci-climate-models.html">the Associated Press (via <i>The New York Times</i>)</a>, <a href="https://www.sciencemag.org/news/2019/12/even-50-year-old-climate-models-correctly-predicted-global-warming"><i>Science Magazine</i></a>, <a href="https://www.vox.com/energy-and-environment/2019/12/4/20991315/climate-change-prediction-models-accurate"><i>Vox</i></a>, and more.</p>
                 <p> 09/20/2019 - My colleagues and I wrote an opinion piece <a href=https://digboston.com/young-climate-scientists-speak-out>"Young climate scientists speak out"</a> about why we, as young climate scientists, participated in the Boston Youth Climate Strike (09/20/2019) for climate action.
 				<p> 06/08/2019 - My opinion piece <a href=https://eos.org/opinions/eight-ways-to-support-women-in-science>"Eight ways to support women in science"</a> was published in <i>EOS</i>.
